@@ -1,0 +1,39 @@
+assignment {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.assignment h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.assignment p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.assignment strong {
+  font-weight: bold;
+}
+
+.assignment ol {
+  margin-bottom: 15px;
+}
+
+.assignment ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.assignment li {
+  color: #777;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,49 @@
+h2 {
+  color: #3498db;
+margin-left: 500px;}
+input{
+  margin-left: 500px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #3498db;
+}
+
+option {
+  background-color: #fff;
+  color: #3498db;
+}
+
+option:hover {
+  background-color: #ecf0f1;
+}

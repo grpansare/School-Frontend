@@ -1,0 +1,54 @@
+
+<div class="que-container">
+  <div class="question">
+    <form (ngSubmit)="validateanswer(quelist[quecounter].selectedAnswer)" id="form">
+
+
+
+       <h2 >{{quenumber}}.{{quelist[quecounter].quename}}</h2>
+       <div class="radiobox">
+       <input type="radio" name="ans" id="op1" [(ngModel)]="quelist[quecounter].selectedAnswer" value="{{quelist[quecounter].option1}}">
+       <label for="op1">{{quelist[quecounter].option1}}</label><br>
+       </div>
+       <div class="radiobox">
+       <input type="radio" name="ans" id="op2"  [(ngModel)]="quelist[quecounter].selectedAnswer" value="{{quelist[quecounter].option2}}" >
+       <label for="op2">{{quelist[quecounter].option2}}</label><br>
+      </div>
+      <div class="radiobox">
+
+       <input type="radio" name="ans" id="op3"  [(ngModel)]="quelist[quecounter].selectedAnswer" value="{{quelist[quecounter].option3}}">
+
+
+       <label for="op3">{{quelist[quecounter].option3}}</label><br>
+       </div>
+      <div class="radiobox">
+
+       <input type="radio" name="ans" id="op4"  [(ngModel)]="quelist[quecounter].selectedAnswer" value="{{quelist[quecounter].option4}}">
+       <label for="op4">{{quelist[quecounter].option4}}</label><br>
+      </div>
+
+      <button mat-raised-button class="btn-field mt-3" (click)="openConfirmationDialog()"  *ngIf="quenumber==15; else next" color="primary" type="submit">Submit</button>
+      <ng-template #next>
+      <button mat-raised-button  class="btn-field mt-3"  color="primary" type="submit">Next</button>
+    </ng-template>
+      </form>
+  </div>
+  <div class="director-box">
+    <div class="que-redirector">
+
+<div *ngFor="let isAnswered of answeredQuestions; let i = index" (click)="redirectTo(i)" class="grid-item" [ngClass]="{ 'answered': answeredQuestions[i]  }">{{ i + 1 }}</div>
+
+    </div>
+
+    <div class="instructs">
+      <div class="display-flex">
+        <div class="selected instruct"></div>
+        <p>Answered</p>
+      </div>
+      <div class="display-flex">
+        <div class="notselected instruct"></div>
+        <p>Not Answered</p>
+      </div>
+    </div>
+  </div>
+</div>

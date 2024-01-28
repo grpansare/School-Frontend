@@ -1,0 +1,33 @@
+.relative{
+  background-image: url("../../../assets/school1.jpeg");
+
+}
+/* Hero.css */
+.hero{
+  height: 500px;
+  width: 100%;
+  position: relative;
+
+
+}
+
+img{
+
+
+  object-fit: cover;
+}
+/* Hero.css */
+
+.hero .image img {
+  height: 600px; /* Set your desired height */
+  width: 100%;   /* Maintain the aspect ratio */
+}
+
+.hero-text{
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+}
+

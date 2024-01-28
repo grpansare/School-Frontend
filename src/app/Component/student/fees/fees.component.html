@@ -1,0 +1,22 @@
+<div class="fomr text-center">
+<form [formGroup]="studentFeesForm" (ngSubmit)="onSubmit(amount.value)">
+  <h1>Student Fees</h1>
+
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Fee Type</mat-label>
+    <mat-select  formControlName="feetype">
+      <mat-option value="Exam Fee">Exam Fee</mat-option>
+      <mat-option value="Total Fee">Total Fee</mat-option>
+      </mat-select>
+      </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Amount</mat-label>
+    <input matInput placeholder="" #amount formControlName="amount" type="number">
+    <mat-icon matSuffix>currency_rupee</mat-icon>
+  </mat-form-field>
+
+
+  <button type="submit" >Submit</button>
+</form>
+</div>

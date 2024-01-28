@@ -1,0 +1,50 @@
+<div class="attendance">
+<h2>Student Attendance</h2>
+
+
+  <div class="form-floating mb-3 ">
+    <input type="date" class="form-control" [(ngModel)]="date" placeholder="name@example.com">
+    <label for="floatingInput">Select Date</label>
+  </div>
+
+<div class="selectclass">
+
+<mat-form-field class="std" appearance="outline">
+  <mat-label>Select Class</mat-label>
+  <mat-select   [(ngModel)]="standard">
+    <mat-option value="5">5</mat-option>
+    <mat-option value="6">6</mat-option>
+    <mat-option value="7">7</mat-option>
+    <mat-option value="8">8</mat-option>
+    <mat-option value="9">9</mat-option>
+    <mat-option value="10">10</mat-option>
+  </mat-select>
+  <mat-icon matSuffix></mat-icon>
+</mat-form-field>
+<button (click)="getStudents()" class="btn btn-primary">Submit</button>
+</div>
+</div>
+<table *ngIf="studentList.length!=0">
+  <thead>
+    <tr>
+
+      <th>Student ID</th>
+      <th>Student Name</th>
+      <th>Attendance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of studentList;let i=index">
+
+      <td>{{ student.userid }}</td>
+      <td>{{ student.firstname }} {{student.lastname}}</td>
+      <td>
+        <select [(ngModel)]="attendance[i]" (change)="updateAttendance(student)">
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+          <option value="Leave">Leave</option>
+        </select>
+      </td>
+    </tr>
+  </tbody>
+</table>

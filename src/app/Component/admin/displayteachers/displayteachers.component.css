@@ -1,0 +1,40 @@
+.header1 {
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+.tablebody {
+  margin: 20px;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 60px;
+}
+
+th {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+h1{
+  text-align: center;
+}

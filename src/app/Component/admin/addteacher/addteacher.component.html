@@ -1,0 +1,110 @@
+<div class="bootstrap-wrapper">
+  <div class="container formbox text-center">
+    <div class="row">
+
+      <div class="col-md-8  col-sm-4">
+
+
+<form (ngSubmit)="handleSubmit(userform)" (ngReset)="handleReset()" [formGroup]="userform">
+  <h2>Add Teacher</h2>
+  <div class="form-fields">
+  <div class="input-group">
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="" formControlName="firstname" type="text">
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <div *ngIf="firstname.errors && (firstname.dirty || firstname.touched)">
+    <p *ngIf="firstname.errors.required">Firstname is required</p>
+    <p *ngIf="firstname.errors?.pattern">Firstname Must be Capitalize without Space</p>
+</div>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>User Name</mat-label>
+    <input matInput placeholder="" formControlName="username" type="text">
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <div *ngIf="username.errors && (username.dirty || username.touched)">
+    <p *ngIf="username.errors.required">username is required</p>
+    <p *ngIf="username.errors?.pattern">username Must be Capitalize without Space</p>
+</div>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="" formControlName="lastname" type="text">
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <div class="form-control-feedback" [ngClass]="'has-danger'" *ngIf="lastname.errors && (lastname.dirty || lastname.touched)">
+    <p *ngIf="lastname.errors.required">Lastname is required</p>
+    <p *ngIf="lastname.errors?.pattern">Lastname Must be Capitalize without Space</p>
+</div>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="" formControlName="email" type="email">
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+  <div class="form-control-feedback" *ngIf="email.errors && (email.dirty || email.touched)">
+    <p *ngIf="email.errors?.required">Email is required</p>
+
+    <p *ngIf="email.errors?.email">Please enter a valid Email address</p>
+</div>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Qualification</mat-label>
+    <input matInput placeholder="" formControlName="qualification" type="text">
+    <mat-icon matSuffix>qualification</mat-icon>
+  </mat-form-field>
+
+  </div>
+  <div class="input-group">
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Contact No.</mat-label>
+    <input matInput placeholder="" formControlName="contact" type="number">
+    <mat-icon matSuffix>phone</mat-icon>
+  </mat-form-field>
+  <div class="form-control-feedback" *ngIf="contact.errors && (contact.dirty || contact.touched)">
+    <p *ngIf="contact.errors?.required">Mobile Number is required</p>
+
+    <p *ngIf="contact.errors?.pattern">Please enter a valid 10-digit Mobile Number</p>
+</div>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Address</mat-label>
+    <textarea matInput placeholder="" formControlName="address" type="text"></textarea>
+    <mat-icon matSuffix>address</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="" formControlName="password" type="password">
+    <mat-icon matSuffix>password</mat-icon>
+  </mat-form-field>
+
+
+
+
+
+
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Gender</mat-label>
+    <mat-select formControlName="gender">
+      <mat-option value="Male">Male</mat-option>
+      <mat-option value="Female">Female</mat-option>
+    </mat-select>
+    <mat-icon matSuffix>gender</mat-icon>
+  </mat-form-field>
+  <div class="form-control-feedback" *ngIf="gender.errors && (gender.dirty || gender.touched)">
+    <p *ngIf="gender.errors.required">Gender is required</p>
+</div>
+</div>
+</div>
+  <div class="text-center">
+    <button mat-raised-button class="full-width" color="primary" type="submit">Submit</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>

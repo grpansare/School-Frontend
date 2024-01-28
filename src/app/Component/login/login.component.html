@@ -1,0 +1,89 @@
+
+<mat-toolbar color="primary" style="height: 70px;">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu_book</mat-icon>
+  </button>
+  <span>EdySync Plus</span>
+  <div >
+  <span class="example-spacer"></span>
+
+</div>
+
+</mat-toolbar>
+
+
+<div class="bootstrap-wrapper">
+  <div class="container formbox  mt-5">
+    <div class="row">
+
+
+
+
+
+
+        <div class="col-md-6  offset-md-3 formbox">
+
+
+
+          <mat-card>
+
+          <div class="btn-field mb-5 mt-4">
+            <!-- <button type="button" id="signupbtn" onclick="onclick2();">Sign-up</button>
+            <button  type="button" class="disable" id="signinbtn" onclick="onclick1();">Sign-in</button> -->
+          <input type="button" value="Student Login" id="signupbtn" (click)="onclick2();" [class]="student">
+          <input type="button" value="Teacher Login" id="signinbtn" (click)="oncteacher()" [class]="teacher">
+
+
+        </div>
+        <h1 class="text-center">{{heading}}</h1>
+
+         <form (ngSubmit)="onSubmit()" [formGroup]="loginform">
+          <mat-form-field class="full-width mx-5" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="" formControlName="email" name="email" type="email">
+            <mat-icon matSuffix>email</mat-icon>
+ </mat-form-field>
+ <span *ngIf="email.errors && (email.dirty || email.touched)" class="error mb-4">
+    <i *ngIf="email.errors.required">Email is required</i>
+ </span>
+          <mat-form-field class="full-width mx-5" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="" formControlName="password" name="password" type="password">
+            <mat-icon matSuffix>lock</mat-icon>
+
+
+
+          </mat-form-field>
+          <span *ngIf="password.errors && (password.dirty || password.touched)" class="error mb-4">
+            <i *ngIf="password.errors.required">password is required</i>
+         </span>
+          <div class=" text-center my-4">
+            <button type="submit" mat-raised-button   class="full-width btn-height" color="primary" style="font-size: 20px;">Login <mat-icon matSuffix>login</mat-icon></button>
+          </div>
+         </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </mat-card>
+
+</div>
+
+        </div>
+
+  </div>
+

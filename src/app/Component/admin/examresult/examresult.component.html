@@ -1,0 +1,22 @@
+<div class="table-container">
+  <table class="result-table">
+    <thead>
+      <tr>
+        <th>Exam ID</th>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of resultsArr">
+        <td>{{ result.examid }}</td>
+        <td>{{ result.studid }}</td>
+        <td>{{ result.studentname }}</td>
+        <td>{{ result.subject }}</td>
+        <td>{{ result.marks }}/15</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

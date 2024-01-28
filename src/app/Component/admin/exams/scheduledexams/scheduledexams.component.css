@@ -1,0 +1,37 @@
+.div {
+  margin-top: 10vw;
+}
+
+table {
+  width: 600px;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+th, td {
+  border: 1px solid #3498db;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+tr:hover {
+  background-color: #bdc3c7;
+}
+
+h1 {
+  color: #e74c3c;
+}
+button{
+  width: 150px;
+  margin-left: 500px;
+}

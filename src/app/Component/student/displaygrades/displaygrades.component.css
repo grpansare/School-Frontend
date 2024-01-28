@@ -1,0 +1,38 @@
+/* displaygrades.component.css */
+
+.main {
+  width: 400px;
+  margin-left: 300px;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.grades{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Optional: Add some styling for the "No grades available" message */
+div p.no-grades {
+  color: #900;
+  font-style: italic;
+}

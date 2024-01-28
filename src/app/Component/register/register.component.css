@@ -1,0 +1,5 @@
+.formbox{
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 30px;
+}

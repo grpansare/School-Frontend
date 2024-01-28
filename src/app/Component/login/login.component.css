@@ -1,0 +1,43 @@
+
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+.btn-height{
+  height: 50px;
+}
+.btn-field input{
+  flex-basis: 38%;
+
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+
+}
+.active{
+
+  background: #3c00a0;
+}
+.input-group{
+  height: 250px;
+}
+.btn-field input.disable{
+  background-color: #eaeaea;
+  color:#555;
+}
+.error{
+  position: relative;
+  bottom: 13px;
+  margin-top: 0;
+ margin-left: 60px;
+ color: red;
+ font-weight: 500;
+ font-family: 'Times New Roman', Times, serif;
+}

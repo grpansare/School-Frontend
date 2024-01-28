@@ -1,0 +1,7 @@
+<mat-dialog-content>
+  Are you sure you want to submit the exam?
+</mat-dialog-content>
+<mat-dialog-actions class="btns">
+  <button mat-button (click)="dialogRef.close(false)">Cancel</button>
+  <button mat-raised-button color="primary" (click)="dialogRef.close(true)">Submit</button>
+</mat-dialog-actions>

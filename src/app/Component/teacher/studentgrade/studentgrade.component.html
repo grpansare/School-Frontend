@@ -1,0 +1,45 @@
+
+
+<form (ngSubmit)="submitForm()" [formGroup]="gradeForm"  class="text-center">
+<h1>Student Grades</h1>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Student id</mat-label>
+    <input matInput placeholder="" formControlName="studid" type="text">
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Student Name</mat-label>
+    <input matInput placeholder="" formControlName="studentname" type="text">
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>English Marks</mat-label>
+    <input matInput placeholder="" formControlName="englishmarks"  type="number">
+    <mat-icon matSuffix>marks</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Science Marks</mat-label>
+    <input matInput placeholder="" formControlName="sciencemarks" type="number">
+    <mat-icon matSuffix>marks</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Marathi Marks</mat-label>
+    <input matInput placeholder="" formControlName="marathimarks"  type="number">
+    <mat-icon matSuffix>marks</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Social Science Marks</mat-label>
+    <input matInput placeholder="" formControlName="ssmarks"  type="number">
+    <mat-icon matSuffix>marks</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Maths Marks</mat-label>
+    <input matInput placeholder="" formControlName="mathsmarks"  type="number">
+    <mat-icon matSuffix>marks</mat-icon>
+  </mat-form-field>
+
+  <!-- Add similar input fields for other properties -->
+
+  <button mat-raised-button type="submit">Submit</button>
+</form>
+

@@ -1,0 +1,21 @@
+form{
+  display: flex;
+flex-direction: column;
+padding: 30px;
+justify-content: center;
+align-items: center;
+}
+.form{
+  width: 500px;
+  margin: 50px auto;
+  margin-left: 310px;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: white;
+}
+.btn{
+  height: 50px;
+  width: 200px;
+  margin: 10px auto;
+
+}

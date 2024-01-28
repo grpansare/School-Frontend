@@ -1,0 +1,15 @@
+
+.admin-dash{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+}
+.dashboard{
+  position: fixed;
+  z-index: 999;
+}
+.router{
+  position: absolute;
+  left: 300px;
+}

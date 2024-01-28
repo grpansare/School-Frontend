@@ -1,0 +1,12 @@
+.box{
+  display: flex;
+}
+.dashboard-and-router {
+  display: flex;  /* Use flexbox layout */
+}
+
+.dashboard {
+  display: flex;  /* Make app-dashboard take up all available space */
+  margin-right: 10px;  /* Add some spacing between dashboard and router-outlet */
+}
+

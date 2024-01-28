@@ -1,0 +1,29 @@
+<h1 class="header text-center">Class Students</h1>
+
+<table border="2px" class="table table-hover mt-5 mx-5">
+        <thead>
+          <tr class="table-dark">
+            <th>Student ID</th>
+            <th>First Name</th>
+            <th>User Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>Gender</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of studentsarr">
+            <td>{{ user.userid }}</td>
+            <td>{{ user.firstname }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.lastname }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.address }}</td>
+            <td>{{ user.contact }}</td>
+            <td>{{ user.gender }}</td>
+          </tr>
+        </tbody>
+</table>

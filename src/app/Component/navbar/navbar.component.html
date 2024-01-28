@@ -1,0 +1,59 @@
+<!--
+<mat-toolbar color="white" style="height: 80px;" class="navbar align-items-center">
+  <div class="nav-logo d-flex align-items-center">
+  <button mat-icon-button >
+    <mat-icon>menu_book</mat-icon>
+  </button>
+  <span>EdySync Plus</span>
+  </div>
+
+  <div >
+  <ul class="nav-menu">
+    <li>
+      <a routerLink="Home"  class="nav-links">Home</a>
+    </li>
+    <li>
+      <a routerLink="about"  class="nav-links">About</a>
+    </li>
+    <li>
+      <a routerLink="Contact" class="nav-links">Contact</a>
+    </li> <li>
+      <a routerLink="Services" class="nav-links">Services</a>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="btn text-dark  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+        Login
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-left ">
+          <li><a class="dropdown-item" routerLink="adminlogin">Admin</a></li>
+          <li><a class="dropdown-item"  routerLink="studteacherlogin">User</a></li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+
+
+
+
+</div>
+
+</mat-toolbar> -->
+
+<nav class="navbarItems">
+  <h1 class="navbar-logo"><mat-icon>menu_book</mat-icon>EdySyncPlus</h1>
+  <div class="menu-icons">
+    <i
+      (click)="handleclick()"
+      [class]="clicked ? 'fas fa-times' : 'fas fa-bars'"
+    ></i>
+  </div>
+  <ul [class]="clicked ? 'nav-menu active' : 'nav-menu'">
+    <li><a href="#home"  (click)="handleclick()" class="nav-links">Home</a></li>
+    <li><a href="#about"  (click)="handleclick()" class="nav-links">About</a></li>
+    <li><a href="#contact"  (click)="handleclick()" class="nav-links">Contact us</a></li>
+
+  </ul>
+</nav>

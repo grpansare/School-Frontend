@@ -1,0 +1,26 @@
+<div class="div">
+
+<a  (click)="onexam()"  >
+  <button mat-raised-button class="full-width" color="primary" >New Exam</button>
+
+</a>
+<table *ngIf="exams.length !== 0; else noexam">
+<tr>
+
+  <th>Class</th>
+  <th>Subject</th>
+  <th>Date</th>
+
+</tr>
+<tr *ngFor="let e of exams">
+  <td>{{e.std}}</td>
+  <td>{{e.subject}}</td>
+  <td>{{e.examdate}}</td>
+
+</tr>
+</table>
+<ng-template #noexam>
+  <h1>No exam scheduled</h1>
+</ng-template>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,44 @@
+<h1 class="header text-center">Student List</h1>
+
+<div class="box">
+
+  <table  class="table">
+  <tr>
+    <th>User Id</th>
+    <th>First Name</th>
+    <th>User Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+
+    <th>Address</th>
+    <th>Contact Number</th>
+    <th>Gender</th>
+    <th>Standard</th>
+    <th>Birth Date</th>
+    <th>Action</th>
+  </tr>
+
+  <tr *ngFor="let p of studArr;" >
+    <td>{{p.userid}}</td>
+    <td>{{p.firstname}}</td>
+    <td>{{p.username}}</td>
+    <td>{{p.lastname}}</td>
+    <td>{{p.email}}</td>
+
+    <td>{{p.address}}</td>
+    <td>{{p.contact}}</td>
+    <td>{{p.gender}}</td>
+    <td>{{p.std}}</td>
+    <td>{{p.birthdate}}</td>
+    <td>
+      <button class="btn btn-primary" (click)="updateStudent(p)"> <i class="fa fa-edit"></i></button>
+    </td>
+
+  </tr>
+
+
+  
+
+       </table>
+
+ </div>

@@ -1,0 +1,26 @@
+<h2>Staff Attendance</h2>
+<input type="date" name="date" id="date" [(ngModel)]="date">
+<table>
+  <thead>
+    <tr>
+
+      <th>User ID</th>
+      <th>Teacher Name</th>
+      <th>Attendance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let staff of staffList;let i=index">
+
+      <td>{{ staff.userid }}</td>
+      <td>{{ staff.firstname }} {{staff.lastname}}</td>
+      <td>
+        <select [(ngModel)]="attendance[i]" (change)="updateAttendance(staff)">
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+          <option value="Leave">Leave</option>
+        </select>
+      </td>
+    </tr>
+  </tbody>
+</table>

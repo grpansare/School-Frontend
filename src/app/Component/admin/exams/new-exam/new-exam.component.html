@@ -1,0 +1,57 @@
+<body>
+
+<div class="bootstrap-wrapper">
+  <div class="container formbox text-center">
+
+    <div class="row">
+
+      <div class="col-md-6 text-center col-sm-4">
+        <h3>New Exam</h3>
+        <form (ngSubmit)="handleSubmit()"  [formGroup]="newexamform">
+
+          <div class="input-group">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Class</mat-label>
+              <mat-select formControlName="std">
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+                <mat-option value="10">10</mat-option>
+              </mat-select>
+              <mat-icon matSuffix></mat-icon>
+            </mat-form-field>
+
+
+            <div class="input-group">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Subject</mat-label>
+                <mat-select formControlName="subject">
+                  <mat-option value="English">English</mat-option>
+                  <mat-option value="Social Science">Social Science</mat-option>
+                  <mat-option value="Science">Science</mat-option>
+                  <mat-option value="Geography">Geography</mat-option>
+                  <mat-option value="Maths">Maths</mat-option>
+
+                </mat-select>
+                <mat-icon matSuffix></mat-icon>
+              </mat-form-field>
+              </div>
+            <div class="form-floating mb-3  mx-5 full-width">
+              <input type="date" class="form-control" formControlName="examdate" placeholder="">
+              <label for="floatingInput">Exam Date</label>
+            </div>
+
+
+          </div>
+          <div class="text-center">
+            <button mat-raised-button [disabled]="!newexamform.valid"  color="primary"
+              type="submit">Schedule Exam</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

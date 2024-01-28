@@ -1,0 +1,20 @@
+<!-- displaygrades.component.html -->
+
+<div class="main">
+  <h2>Student Grades</h2>
+
+  <div *ngIf="grades" class="grades">
+    <p><strong>English Marks:</strong> {{ grades.englishmarks }}</p>
+    <p><strong>Science Marks:</strong> {{ grades.sciencemarks }}</p>
+    <p><strong>Marathi Marks:</strong> {{ grades.marathimarks }}</p>
+    <p><strong>SS Marks:</strong> {{ grades.ssmarks }}</p>
+    <p><strong>Maths Marks:</strong> {{ grades.mathsmarks }}</p>
+    <p><strong>Grade:</strong> {{ grades.grade }}</p>
+    <p><strong>Percentage:</strong> {{ grades.percentage }}%</p>
+  </div>
+
+  <div *ngIf="!grades">
+    <p>No grades available for the student.</p>
+  </div>
+</div>
+

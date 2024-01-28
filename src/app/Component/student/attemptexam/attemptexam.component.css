@@ -1,0 +1,90 @@
+.que-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+
+}
+.question{
+  height: 400px;
+       width: 500px;
+       background-color: rgb(244, 240, 240);
+       margin-left:80px ;
+       margin-top:40px ;
+       display: flex;
+
+       padding:70px 60px;
+       box-sizing: border-box;
+}
+.radiobox{
+  display: flex;
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #eceff1;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.que-redirector{
+	display:grid;
+	grid-template-rows: 50px 50px 50px 50px ;
+	grid-template-columns:50px 50px 50px 50px;
+
+  gap: 20px;
+
+
+
+}
+.director-box{
+  border: 1px solid black;
+  width: 450px;
+  height: 450px;
+  margin-top: 50px;
+margin-left: 50px;
+  padding:70px 80px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color:rgb(130, 130, 243);
+}
+.answered {
+  background-color: green;
+  color: #fff;
+}
+.selected{
+  background-color: rgb(115, 237, 115);
+  color: white;
+}
+.notselected{
+  background-color: rgb(240, 230, 230);
+  color: white
+}
+.instructs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+
+
+
+}
+.display-flex{
+  display: flex;
+  gap: 5px;
+}
+.instruct{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+.btn-field{
+  height: 30px;
+  width: 100px;
+
+}

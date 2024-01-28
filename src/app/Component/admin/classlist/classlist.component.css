@@ -1,0 +1,48 @@
+.classlist{
+  padding: 70px;
+  margin-left: 50px;
+}
+.card-group{
+  gap: 10px;
+}
+.card-img-top{
+  height: 250px;
+  width: 300px;
+}
+.header{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.time {
+  text-align: left;
+}
+.lunch{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}

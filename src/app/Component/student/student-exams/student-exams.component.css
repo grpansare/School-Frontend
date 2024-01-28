@@ -1,0 +1,38 @@
+/* Style for the table container */
+table {
+  width: 80%;
+  margin: 20px auto;
+  margin-left: 20vw;
+  margin-top: 10vw;
+  border-collapse: collapse;
+  border: 2px solid #3498db;
+}
+
+/* Style for table headers */
+th {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+h1 {
+  text-align: center;
+  color: #555;
+}

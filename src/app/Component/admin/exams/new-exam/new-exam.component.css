@@ -1,0 +1,31 @@
+.input-group{
+  display: flex;
+  flex-direction: column
+  ;
+  width: 100%;
+}
+.full-width{
+  width: 80%;
+  margin-left: 50px;
+}
+form{
+  width: 100%;
+
+}
+.container{
+  margin-top: 10vw;
+}
+.col-md-6{
+  padding: 30px;
+  box-sizing: border-box;
+ border-radius: 20px;
+ background-color: white;
+}
+body{
+  width: 100vw;
+
+}
+.form-floating{
+  background-color: transparent;
+}
+

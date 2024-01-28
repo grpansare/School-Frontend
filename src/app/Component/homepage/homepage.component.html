@@ -1,0 +1,139 @@
+
+
+
+
+<header >
+
+
+      <div class="landing" >
+    <div class="header-text">
+   <h1 class="header text-center" >Welcome to EduSyncPlus</h1>
+   <img [src]="imgsrc" >
+     <p class="para">
+     your comprehensive solution for efficient and streamlined school administration.</p>
+
+
+
+   </div>
+</div>
+
+
+
+
+</header>
+
+
+
+    
+
+
+
+
+
+ <div class="container-xxl py-5" id="about">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp"  style="min-height: 400px;">
+              <div class="position-relative h-100">
+                  <img class="img-fluid position-absolute w-100 h-100" src="assets/card1.jpeg" alt="" style="object-fit: cover;">
+              </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" >
+              <h2 class="section-title  text-start text-primary pe-3">About Our School</h2>
+              <h1 class="mb-4" style="letter-spacing: 4px;">Welcome EduSyncPlus</h1>
+              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo a odio dignissim consequat non nec est. Nulla facilisi.</p>
+              <p class="mb-4">Our school is dedicated to providing quality education with a focus on holistic development. We strive to create an environment that nurtures intellectual curiosity, creativity, and character building.</p>
+              <div class="row gy-2 gx-4 mb-4">
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Experienced Faculty</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Interactive Learning</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Modern Facilities</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Parent Involvement</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Technology Integration</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Student-Centric Approach</p>
+                  </div>
+              </div>
+              <a class="btn btn-primary py-3 px-5 mt-2" href="#">Learn More</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="photo-galary">
+  <h1 class="text-center mt-5">Photo Gallery</h1>
+ <div class="card-container">
+  <div class="card" (mouseenter)="hoverCard(1)" (mouseleave)="unhoverCard()">
+    <img src="/assets/card1.jpeg" alt="Card 1" class="card-image">
+
+  </div>
+  <div class="card" (mouseenter)="hoverCard(2)" (mouseleave)="unhoverCard()">
+    <img src="/assets/card2.jpeg" alt="Card 2" class="card-image">
+
+  </div>
+  <div class="card" (mouseenter)="hoverCard(3)" (mouseleave)="unhoverCard()">
+    <img src="/assets/card3.jpeg" alt="Card 3" class="card-image">
+
+  </div>
+</div>
+</div>
+<div class="container-xxl py-5 mb-5" >
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6 " >
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-chalkboard-teacher text-primary mb-4"></i>
+            <h2 class="mb-3">Qualified Teachers</h2>
+            <p>Experienced and skilled instructors dedicated to providing quality education.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-desktop text-primary mb-4"></i>
+            <h2 class="mb-3">Online Learning</h2>
+            <p>Interactive online classes to facilitate learning from the comfort of your home.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-building text-primary mb-4"></i>
+            <h2 class="mb-3">Campus Facilities</h2>
+            <p>Modern infrastructure and facilities to create a conducive learning environment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+            <h2 class="mb-3">Library Resources</h2>
+            <p>Extensive collection of books and resources to support academic excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <app-testimonial></app-testimonial> -->
+<app-testimonial></app-testimonial>
+
+<div id="contact">
+<app-contact-us></app-contact-us>
+</div>
+<app-footer></app-footer>
+

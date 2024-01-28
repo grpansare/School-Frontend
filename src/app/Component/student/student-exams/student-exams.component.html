@@ -1,0 +1,20 @@
+<div *ngIf="exams.length !== 0; else noexam">
+  <table align="center" class="table text-center" border="2">
+    <tr>
+      <th>Subject</th>
+      <th>Date</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let e of exams">
+      <td>{{ e.subject }}</td>
+      <td>{{ e.examdate }}</td>
+      <td>
+        <button mat-raised-button (click)="startexam(e.subject)" color="primary" type="submit">Attempt Now</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ng-template #noexam>
+  <h1>No exam scheduled</h1>
+</ng-template>

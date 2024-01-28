@@ -1,0 +1,21 @@
+.full-width{
+  width: 100%;
+}
+.form-control{
+  background-color: transparent;
+  border: 1px solid black;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+ margin-left: 200px;
+}
+.form-fields{
+  display: flex;
+
+  gap: 20px;
+}

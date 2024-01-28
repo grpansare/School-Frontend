@@ -1,0 +1,37 @@
+
+<div class="form">
+  <h2 class="text-center">Salary Form</h2>
+<form [formGroup]="salaryForm" (ngSubmit)="submitForm()">
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Teacher Id</mat-label>
+    <input matInput placeholder=""  formControlName="teacherid" type="text">
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <div class="form-control-feedback" *ngIf="teacherid.errors && (teacherid.dirty || teacherid.touched)">
+    <p *ngIf="teacherid.errors?.required">Teacher id is required</p>
+
+</div>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Teacher Name:</mat-label>
+    <input matInput placeholder="" formControlName="teacherName" type="text">
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <div class="form-control-feedback" *ngIf="teacherName.errors && (teacherName.dirty || teacherName.touched)">
+    <p *ngIf="teacherName.errors?.required">Teacher Name is required</p>
+
+</div>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Salary</mat-label>
+    <input matInput placeholder="" formControlName="salary" type="text">
+    <mat-icon matSuffix>currency_rupee</mat-icon>
+  </mat-form-field>
+  <div class="form-control-feedback" *ngIf="salary.errors && (salary.dirty || salary.touched)">
+    <p *ngIf="salary.errors?.required">salary is required</p>
+
+</div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
