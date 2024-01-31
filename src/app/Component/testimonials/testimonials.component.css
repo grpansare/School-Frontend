@@ -10,6 +10,9 @@
 
 
 }
+.testimonials{
+  padding: 1rem 15%;
+}
 
 h2 {
   color: #333;
@@ -68,11 +71,12 @@ h2 {
   flex-wrap: wrap;
 
 
+
 }
 
 .card {
   width: 100%;
-  height: 280px;
+  height: 300px;
   padding: 20px;
   box-sizing: border-box;
   text-align: start;
@@ -109,6 +113,7 @@ h2 {
    box-sizing: border-box;
   background-color: rgb(226, 239, 226);
   padding: 1.3rem;
+
 }
 
 .fa-quote-left {

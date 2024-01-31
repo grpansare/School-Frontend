@@ -7,6 +7,13 @@ section {
    */
 
 }
+.sr {
+  visibility: hidden;
+}
+
+.landing.sr {
+  visibility: visible;
+}
 
 
 
@@ -20,7 +27,8 @@ section {
 .header{
   position: absolute;
 top: 300px;
-margin-left: 650px;
+left: 50%;
+transform: translate(-50%);
 color: rgb(3, 3, 103);
 font-weight: 500;
 
@@ -156,7 +164,7 @@ form .btn2{
 
 .about-us p {
   color: #555;
-  font-size: 16px;
+
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -210,6 +218,9 @@ form .btn2{
   background-color: #f2f2f2;
   padding: 20px;
 }
+.font-1{
+  font-size: 1rem;
+}
 
 /* Typography Styles */
 h1, h2, h3 {
@@ -222,6 +233,9 @@ p {
 /*** Service ***/
 .service-item {
   transition: .5s;
+  font-size: 1.3rem;
+
+
 
 }
 

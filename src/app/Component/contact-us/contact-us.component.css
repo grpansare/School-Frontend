@@ -8,10 +8,9 @@
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
+	width: 50%;
 	min-height: 580px;
-  min-width:370px;
+  min-width:400px;
 }
 
 h2 {
@@ -20,6 +19,7 @@ h2 {
 }
 .form-container {
   display:flex;
+
 }
 
 .left-container {

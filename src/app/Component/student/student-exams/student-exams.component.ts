@@ -34,6 +34,6 @@ export class StudentExamsComponent {
 
  }
  startexam(subject:any){
-this.router.navigate(['student/attemptexam', subject]);
+  this.router.navigate(['student/attemptexam', subject]);
  }
 }

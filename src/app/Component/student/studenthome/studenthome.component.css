@@ -2,6 +2,8 @@
   position: relative;
   width: 1300px;
   height: 700px;
+  border: 1px solid black;
+
 }
 
 .background-image {
