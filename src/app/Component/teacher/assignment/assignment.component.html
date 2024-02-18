@@ -1,0 +1,26 @@
+
+<div class="box ">
+<button class="btn btn-primary" (click)="onClick()">
+  New Assignment
+</button>
+
+
+  <table class="table ">
+    <tr>
+      <th>Subject</th>
+      <th>Class</th>
+      <th>Last Date</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let assignment of assignmentArr;">
+      <td>{{assignment.subject}}</td>
+      <td>{{assignment.std}}</td>
+      <td>{{assignment.lastdate}}</td>
+
+      <td>
+        <!-- <button class="btn btn-outline-danger btn2">View</button> -->
+        <a [href]="assignment.file.filePath" download>View</a>
+      </td>
+    </tr>
+  </table>
+</div>

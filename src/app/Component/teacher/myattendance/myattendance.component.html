@@ -1,0 +1,26 @@
+
+<div class="mt-5 box">
+<h2 class="text-center text-primary">My Attendance</h2>
+
+<table class="text-center">
+  <thead>
+    <tr>
+
+      <th>Date</th>
+
+      <th>Attendance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let staff of attendanceArr;let i=index">
+
+      <td>{{ staff.date }}</td>
+
+      <td>
+       {{staff.attendance}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+

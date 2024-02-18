@@ -1,9 +1,14 @@
-.header1 {
-  color: black;
+.header {
+
   padding: 5px;
   text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  color: blue;
 }
-
 .tablebody {
   margin: 20px;
   padding: 8px;

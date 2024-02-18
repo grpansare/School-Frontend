@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import ScrollReveal from 'scrollreveal';
+import Aos from 'aos';
+
 
 
 
@@ -21,13 +22,7 @@ export class HomepageComponent {
     }
 
     ngOnInit() {
-      ScrollReveal().reveal('landing', {
-        duration: 1000,
-        origin: 'left', // or 'right', 'top', 'bottom', etc.
-        distance: '50px', // distance from the origin
-        easing: 'ease-in-out', // animation easing
-        // Other configuration options...
-      });
+      Aos.init();
     }
   hoverCard(cardNumber: number): void {
     this.hoveredCard = cardNumber;

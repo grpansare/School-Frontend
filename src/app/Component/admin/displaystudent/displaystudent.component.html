@@ -1,4 +1,4 @@
-<h1 class="header text-center">Student List</h1>
+<h1 class="header text-primary mt-4 text-center">Student List</h1>
 
 <div class="box">
 
@@ -18,7 +18,7 @@
     <th>Action</th>
   </tr>
 
-  <tr *ngFor="let p of studArr;" >
+  <tr *ngFor="let p of displayStudents;" >
     <td>{{p.userid}}</td>
     <td>{{p.firstname}}</td>
     <td>{{p.username}}</td>
@@ -42,3 +42,10 @@
        </table>
 
  </div>
+
+ <app-paginator
+ [currentPage]="currentPage"
+ [pageSize]="pageSize"
+ [collectionSize]="studArr.length"
+ (pageChange)="onPageChange($event)">
+</app-paginator>

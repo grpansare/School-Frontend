@@ -26,10 +26,10 @@ section {
 }
 .header{
   position: absolute;
-top: 300px;
+top: 350px;
 left: 50%;
 transform: translate(-50%);
-color: rgb(3, 3, 103);
+color: rgb(2, 2, 65);
 font-weight: 500;
 
 
@@ -42,7 +42,7 @@ font-weight: 500;
 .para{
 
   position: absolute;
-  top: 350px;
+  top: 390px;
 margin-left: 50%;
 width: 100%;
 padding: 0.6rem;
@@ -277,4 +277,18 @@ p {
 
   }
 
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+       opacity: 1;
+       transform: translateY(0);
+  }
+}
+.fadeInUp{
+
+  animation: fadeInUp 1s ease-in-out;
 }

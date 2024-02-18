@@ -1,0 +1,41 @@
+<h1 class="header text-primary mt-4 text-center">Student List</h1>
+<button class="btn btn-primary" (click)="onClick()">
+
+  New Assigment
+
+</button>
+
+<div class="box">
+
+  <table  class="table">
+  <tr>
+    <th>Subject</th>
+    <th>Class</th>
+    <th>Last Date</th>
+
+  </tr>
+
+  <tr *ngFor="let assignment of assignmentArr;" >
+    <td>{{assignment.subject}}</td>
+    <td>{{assignment.class}}</td>
+    <td>{{assignment.lastname}}</td>
+
+
+    <td>
+      <button class="btn btn-primary">
+View
+      </button>
+    </td>
+
+
+
+  </tr>
+
+
+  
+
+       </table>
+
+ </div>
+
+

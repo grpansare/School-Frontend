@@ -1,5 +1,16 @@
 .student-dash{
   display: flex;
+   flex-direction: column;
+   width: 100vw;
 
-
+}
+.nav-item{
+  position: relative;
+  right: 70px;
+  background-color: rgb(232, 235, 235);
+  list-style: none;
+}
+.navbar{
+  background-color: white;
+  padding: 1rem 0;
 }

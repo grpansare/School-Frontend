@@ -34,6 +34,11 @@ import { TeacherhomeComponent } from './component/teacher/teacherhome/teacherhom
 import { AdmindashboardComponent } from './Component/admin/admindashboard/admindashboard.component';
 import { UpdateteacherComponent } from './Component/admin/updateteacher/updateteacher.component';
 import { ProfileComponent } from './Component/student/profile/profile.component';
+import { AssignmentComponent } from './Component/teacher/assignment/assignment.component';
+import { DisplayassignmentsComponent } from './Component/teacher/assignment/displayassignments/displayassignments.component';
+import { NewassignmentComponent } from './Component/teacher/assignment/newassignment/newassignment.component';
+import { MyattendanceComponent } from './Component/teacher/myattendance/myattendance.component';
+import { ForgetpasswordComponent } from './Component/forgetpassword/forgetpassword.component';
 
 
 
@@ -45,6 +50,7 @@ const routes: Routes = [
   {path:"",component:HomeComponent},
   {path:"adminlogin",component:AdminloginComponent},
   {path:"studteacherlogin",component:LoginComponent},
+  {path:"studteacherlogin/forgetpassword",component:ForgetpasswordComponent},
 
   {path:"admin",component:AdminComponent,
     children:[
@@ -88,9 +94,12 @@ const routes: Routes = [
 },
 {path:"teacher",component:TeacherComponent,
 children:[
-  {path:"Assignment",component:TeacherassignmentComponent},
+  {path:"Assignment",component:AssignmentComponent},
+  {path:"newAssignment",component:NewassignmentComponent},
+  // {path:"newAssignment",component:AssignmentComponent},
   {path:"logout",component:TeacherlogoutComponent},
   {path:"stud-attendance",component:StudentattendanceComponent},
+  {path:"myattendance",component:MyattendanceComponent},
   {path:"grades",component:StudentgradeComponent},
   {path:"",component:TeacherhomeComponent},
 

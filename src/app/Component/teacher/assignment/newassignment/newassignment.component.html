@@ -1,0 +1,42 @@
+<div class="form text-center">
+  <form [formGroup]="AssignmentForm" (ngSubmit)="onSubmit()" class="shadow">
+    <h1>New Assignment</h1>
+
+
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Class</mat-label>
+      <mat-select  formControlName="std">
+        <mat-option value="5">5</mat-option>
+        <mat-option value="6">6</mat-option>
+        <mat-option value="7">7</mat-option>
+        <mat-option value="8">8</mat-option>
+        <mat-option value="9">9</mat-option>
+        <mat-option value="10">10</mat-option>
+      </mat-select>
+      <mat-icon matSuffix></mat-icon>
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Subject</mat-label>
+      <mat-select  formControlName="subject">
+        <mat-option value="English">English</mat-option>
+        <mat-option value="Science">Science</mat-option>
+        <mat-option value="Programming">Programming</mat-option>
+        <mat-option value="Maths">Maths</mat-option>
+        <mat-option value="History">History</mat-option>
+      </mat-select>
+      <mat-icon matSuffix></mat-icon>
+    </mat-form-field>
+    <div class="form-floating mb-3 full-width">
+      <input type="date" class="form-control" formControlName="lastdate" >
+      <label for="floatingInput">Last Date </label>
+    </div>
+    <div class="form-floating mb-3 full-width">
+      <input type="file" class="form-control" [(ngModel)]="selectedFile" (change)="filechange($event)">
+      <label for="floatingInput">Upload Assignment</label>
+    </div>
+
+
+    <button type="submit" class="btn btn-info text-white ">Upload</button>
+  </form>
+  </div>
+

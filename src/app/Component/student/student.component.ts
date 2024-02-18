@@ -7,7 +7,11 @@ import Swal from 'sweetalert2';
   styleUrl: './student.component.css'
 })
 export class StudentComponent {
+  username:any="";
 constructor(){
+
+  this.username=localStorage.getItem('username');
+
   Swal.fire({
     title: "Login Successful",
     icon: "success"

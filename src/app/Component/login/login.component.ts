@@ -80,6 +80,7 @@ export class LoginComponent {
             else if(response.roleName=="TEACHER"){
 
 // Store in localStorage
+localStorage.setItem("userid",response.userid)
               this.router.navigateByUrl('teacher');
 
             }

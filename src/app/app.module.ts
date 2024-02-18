@@ -68,6 +68,31 @@ import { CarouselComponent } from './Component/carousel/carousel.component';
 import { HeroComponent } from './Component/hero/hero.component';
 import { ContactUsComponent } from './Component/contact-us/contact-us.component';
 import { ProfileComponent } from './Component/student/profile/profile.component';
+import { PaginatorComponent } from './Component/paginator/paginator.component';
+import { Footer2Component } from './Component/footer2/footer2.component';
+import { AssignmentComponent } from './Component/teacher/assignment/assignment.component';
+import { DisplayassignmentsComponent } from './Component/teacher/assignment/displayassignments/displayassignments.component';
+import { NewassignmentComponent } from './Component/teacher/assignment/newassignment/newassignment.component';
+import { MyattendanceComponent } from './Component/teacher/myattendance/myattendance.component';
+import { ForgetpasswordComponent } from './Component/forgetpassword/forgetpassword.component';
+import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
+import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
+import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import { MdbPopoverModule } from 'mdb-angular-ui-kit/popover';
+import { MdbRadioModule } from 'mdb-angular-ui-kit/radio';
+import { MdbRangeModule } from 'mdb-angular-ui-kit/range';
+import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
+import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
+import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
+import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
+import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { OtpModalComponent } from './Component/otp-modal/otp-modal.component';
+
+
 
 
 
@@ -132,8 +157,17 @@ UpdateteacherComponent,
 CarouselComponent,
 HeroComponent,
 ContactUsComponent,
-ProfileComponent
-,
+ProfileComponent,
+PaginatorComponent,
+Footer2Component,
+AssignmentComponent,
+DisplayassignmentsComponent,
+NewassignmentComponent,
+MyattendanceComponent,
+ForgetpasswordComponent,
+OtpModalComponent,
+
+
 
 
 
@@ -159,7 +193,23 @@ ProfileComponent
     MatDialogModule,
 
 
+
 NgbModule,
+   MdbAccordionModule,
+   MdbCarouselModule,
+   MdbCheckboxModule,
+   MdbCollapseModule,
+   MdbDropdownModule,
+   MdbFormsModule,
+   MdbModalModule,
+   MdbPopoverModule,
+   MdbRadioModule,
+   MdbRangeModule,
+   MdbRippleModule,
+   MdbScrollspyModule,
+   MdbTabsModule,
+   MdbTooltipModule,
+   MdbValidationModule,
 
 
 

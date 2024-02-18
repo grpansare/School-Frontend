@@ -1,17 +1,13 @@
-.formbox{
-  font-size: 1rem;
-  padding: 3rem;
-}
-.bootstrap-wrapper{
-  padding: 4rem;
 
-}
 .btn-field{
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 10px;
 
+}
+.formbox{
+  margin-top: 10%;
 }
 .btn-height{
   height: 50px;

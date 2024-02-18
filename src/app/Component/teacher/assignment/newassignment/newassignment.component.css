@@ -1,0 +1,38 @@
+.form{
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+
+}
+form{
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: white;
+  padding: 2.7rem;
+  border-radius: 10px;
+
+
+}
+.full-width{
+  width: 100%;
+}
+input[type="date"] {
+  /* Your custom styles */
+  border: 1px solid black;
+  background: transparent;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+}
+input[type="file"] {
+  /* Your custom styles */
+  border: 1px solid black;
+  background: transparent;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}

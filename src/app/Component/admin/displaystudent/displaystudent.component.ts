@@ -10,6 +10,8 @@ import { RouteReuseStrategy, Router } from '@angular/router';
 export class DisplaystudentComponent {
 
   studArr: any[] = []
+  pageSize = 8;
+  currentPage = 1;
 
   constructor(private http: HttpClient, private router: Router) {
     this.show();
@@ -30,6 +32,22 @@ export class DisplaystudentComponent {
     );
 
 
+  }
+
+  get displayStudents(): any[] {
+    const startIndex = (this.currentPage - 1) * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    return this.studArr.slice(startIndex, endIndex);
+  }
+
+  onPageChange(page: number): void {
+    this.currentPage = page;
+    // this.scrollToTop();
+    // this.router.navigate([], {
+    //   relativeTo: this.route,
+    //   queryParams: { page: this.currentPage },
+    //   queryParamsHandling: 'merge',
+    // });
   }
   updateStudent(stud: any) {
 

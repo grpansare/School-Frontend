@@ -1,0 +1,10 @@
+
+<div class="paginator">
+<ngb-pagination
+[(page)]="currentPage"
+[pageSize]="pageSize"
+[collectionSize]="collectionSize"
+
+(pageChange)="pageChange.emit($event)">
+</ngb-pagination>
+</div>

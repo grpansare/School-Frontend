@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class DisplayteachersComponent implements OnInit {
   teachers: any[] = [];
+  pageSize = 8;
+  currentPage = 1;
 
   constructor(private http: HttpClient,private router:Router) {} // Inject HttpClient here
 
@@ -29,6 +31,21 @@ export class DisplayteachersComponent implements OnInit {
         console.error('Error fetching teachers:', error);
       }
     );
+  }
+  get displayTeachers(): any[] {
+    const startIndex = (this.currentPage - 1) * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    return this.teachers.slice(startIndex, endIndex);
+  }
+
+  onPageChange(page: number): void {
+    this.currentPage = page;
+    // this.scrollToTop();
+    // this.router.navigate([], {
+    //   relativeTo: this.route,
+    //   queryParams: { page: this.currentPage },
+    //   queryParamsHandling: 'merge',
+    // });
   }
   updateTeacher(teacher: any) {
 

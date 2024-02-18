@@ -1,0 +1,57 @@
+<!-- <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+
+</div> -->
+<div class="modal-body">
+  <section class="wrapper">
+		<div class="">
+			<div class="col-sm-8  col-lg-7  col-xl-12 text-center">
+        <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="modalRef.close()"
+        style="position: absolute; top: 10px; right: 10px;"
+      ></button>
+
+				<form class="rounded bg-white  p-5" [formGroup]="otpform">
+
+					<h3 class="text-dark fw-bolder fs-4 mb-2">Two Step Verification</h3>
+
+					<div class="fw-normal text-muted mb-4">
+					An Otp has been sent to <b>{{email}} </b> .Please Check <br>
+          your inbox .If the Otp is not in your inbox.please check your spam and updates folder as wel !!
+					</div>
+
+
+
+					<div class="otp_input text-start mb-2">
+                        <label for="digit">Type your 6 digit security code</label>
+						<div class="d-flex align-items-center justify-content-between mt-2">
+                            <input type="text" class="form-control" placeholder="" formControlName="num1">
+                            <input type="text" class="form-control" placeholder=""  formControlName="num2">
+                            <input type="text" class="form-control" placeholder=""  formControlName="num3">
+                            <input type="text" class="form-control" placeholder=""  formControlName="num4">
+                            <input type="text" class="form-control" placeholder=""  formControlName="num5">
+                            <input type="text" class="form-control" placeholder=""  formControlName="num6">
+                        </div>
+					</div>
+
+					<button type="submit" class="btn btn-primary submit_btn my-4" (click)="verify()">Verify</button>
+
+                    <div class="fw-normal text-muted mb-2">
+						Didn’t get the code ?  <a href="#" class="text-primary fw-bold text-decoration-none">Resend</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+</div>
+<!-- <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
+    Close
+  </button>
+  <button type="button" class="btn btn-primary">Save changes</button>
+</div> -->

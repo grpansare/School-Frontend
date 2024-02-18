@@ -8,7 +8,7 @@
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 50%;
+	width: 70%;
 	min-height: 580px;
   min-width:400px;
 }
@@ -24,19 +24,19 @@ h2 {
 
 .left-container {
   flex:1;
-  height:480px;
-  background-color:$teal;
+  height:100%;
 }
 .right-container {
   display:flex;
   flex:1;
   height:460px;
-  background-color: $white;
+  background-color: white;
   justify-content:center;
   align-items:center;
 }
 
 .left-container {
+
   display:flex;
   flex:1;
   height:480px;
